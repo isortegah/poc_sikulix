@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Regresion" verbose="1" >
+  <test name="GoogleTest" >
+    <classes>
+       <class name="com.isortegah.poc_sikulix.TestRunner" /> 
+    </classes>
+  </test>
+</suite>
