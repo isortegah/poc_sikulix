@@ -16,6 +16,8 @@
         <testng.version>6.9.8</testng.version>
         <cucumber-reporting.version>3.8.0</cucumber-reporting.version>
         <sikuli.version>1.1.1</sikuli.version>
+        <guava.version>23.0</guava.version>
+
     </properties>
      <dependencies>
         <dependency>
@@ -61,6 +63,11 @@
             <artifactId>sikulixapi</artifactId>
             <version>${sikuli.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <testResources>
@@ -92,7 +99,8 @@
                   <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
                 <systemPropertyVariables>
-                    <propertyName>chrome</propertyName>
+                    <browserDefault>chrome</browserDefault>
+                    <so>mac</so>
                 </systemPropertyVariables>
               </configuration>
             </plugin>
