@@ -55,7 +55,7 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
+            <version>${cucumber-testng.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
@@ -93,14 +93,13 @@
               <configuration>              
                 <forkCount>0</forkCount>
                 <useSystemClassLoader>false</useSystemClassLoader>
-                <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
-                <outputDirectory>${basedir}/target/surefire-reports</outputDirectory>
+                <argLine>-Xmx1024m</argLine>
                 <suiteXmlFiles>
                   <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
                 <systemPropertyVariables>
                     <browserDefault>chrome</browserDefault>
-                    <so>mac</so>
+                    <so>linux</so>
                 </systemPropertyVariables>
               </configuration>
             </plugin>
