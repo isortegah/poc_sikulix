@@ -4,6 +4,7 @@
 \.project
 \.settings/
 .idea/*
+.DS_Store
 src/test/resources/common/\.DS_Store
 
 src/test/\.DS_Store
