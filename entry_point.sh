@@ -1,6 +1,7 @@
 #!/bin/bash
-
 source /opt/bin/functions.sh
+
+export PERSIST="${PERSIST}:=false"
 
 function shutdown {
   kill -s SIGTERM $NODE_PID
@@ -34,4 +35,6 @@ echo "VNC in port 5900"
 
 cd /home/sikuser/poc
 mvn test
-wait $NODE_PID
+if [ $PERSIST == "true" ]; then
+    wait $NODE_PID
+fi

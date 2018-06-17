@@ -27,4 +27,4 @@ USER sikuser
 RUN mkdir /home/sikuser/poc
 COPY src /home/sikuser/poc/src
 COPY pom.xml /home/sikuser/poc/
-RUN cd /home/sikuser/poc && ls -la && mvn install -DskipTests=true
+RUN cd /home/sikuser/poc &&  mvn install -DskipTests=true
