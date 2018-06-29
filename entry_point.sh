@@ -1,7 +1,11 @@
 #!/bin/bash
 source /opt/bin/functions.sh
 
-export PERSIST="${PERSIST}:=false"
+export PERSIST="${PERSIST:=false}"
+export OS="${OS:=linux}"
+export BROWSER="${BROWSER:=chrome}"
+
+echo $OS
 
 function shutdown {
   kill -s SIGTERM $NODE_PID
@@ -34,7 +38,7 @@ x11vnc -forever -usepw -shared -ncache 10 -rfbport 5900 -display $DISPLAY &
 echo "VNC in port 5900"
 
 cd /home/sikuser/poc
-mvn test
+mvn test -Dos=$OS -DbrowserDefault=$BROWSER
 if [ $PERSIST == "true" ]; then
     wait $NODE_PID
 fi

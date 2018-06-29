@@ -15,6 +15,5 @@ public class GoogleStepDefinition {
     public void i_am_on_google_page() throws Throwable {
         driver = Hooks.driver;
         driver.get("http://google.com");
-        //throw new PendingException();
     }
 }
