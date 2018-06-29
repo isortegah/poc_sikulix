@@ -69,6 +69,8 @@ Al terminar el escenario
 [INFO] Final Memory: 51M/1404M
 [INFO] ------------------------------------------------------------------------
 ```
+
+![Alt Text](/imgs/poc_sikulix.gif)
 ### Docker
 
 Al momento para este POC utilice una imagen **Docker** `isortegah/sikulix_ubuntu_chrome` que cree basandome en las imagenes de **Selenium**, en especial esta imagen esta creada para solo ejecutar pruebas con el navegador chrome. Pueden ver otras imagenes que he construido en mi repo [Projects and Docker](https://github.com/isortegah/projects-and-docker).
