@@ -90,3 +90,5 @@ xvncviewer 127.0.0.1
 La contraseña es **secret**.
 
 El resultado que arroja la ejecución del contenedor es igual a la de la ejecución con el comando maven directo.
+
+![Alt Text](/imgs/poc_docker.gif)
