@@ -6,9 +6,15 @@ Esta prueba de concepto, se limita a lo mínimo necesario para poder comenzar a 
 
 El poc esta integrado por [TestNG](https://testng.org/doc/index.html) como framework de ejecución de pruebas con [Cucumber](https://cucumber.io/) que es utilizado para pruebas de aceptación con un enfoque BDD y [MAVEN](https://maven.apache.org/) como administración de dependencias. 
 
+## Ejecución
+
 Hay dos formas de ejecutar el POC, directamente con el comando `mvn test` o vía el contenedor Docker.
 
 ### Comando maven
+
+#### Pre-requisito
+
+* [Sikulix](http://www.sikulix.com/quickstart/)
 
 ```bash
 mvn test -DbrowserDefault=chrome -Dso=linux
